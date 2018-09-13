@@ -16,7 +16,7 @@ app.use(express.static(__dirname + '/public'));
 //Mounting the endpoint, so that it lets the dishRouter handle the requests with URLs '/dishes'
 app.use('/dishes', dishRouter);
 
-// The following code is commented since all the /dishes and /dishes/:dishId requests are being hadled by the dishRouter...
+// The following code is commented since all the /dishes and /dishes/:dishId requests are being handled by the dishRouter...
 /*
 app.all('/dishes', (req, res, next) => {
 	//console.log(req.headers);
